@@ -26,6 +26,7 @@ body{
 
 .about-div p{
     color: hsl(210, 22%, 49%);
+    flex-basis: 100%;
 }
 
 #img{
@@ -109,4 +110,20 @@ body{
     color: hsl(210, 22%, 49%);
     line-height: 1.5;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 892px) {
+    .grid-div{
+        /* grid-template-columns: 1fr; */
+        width: 100vw;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .grid-div{
+        grid-template-columns: 1fr;
+        width: 100vw;
+        left: 0;
+    }
 }
